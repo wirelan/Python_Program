@@ -1,10 +1,64 @@
+#Using for loop
+
 num = int(input("Enter the number \n"))
 p = 0
 for i in range(2,num):
-    n%i==0
+    num%i==0
     p = 1
     break
 if p==0:
     print("Number is prime ")
 else:
     print("Number is not prime")
+----------------------------------------------------------------------
+
+# Using While loop
+
+num = int(input("Enter the number \n"))
+p = 0
+i = 2
+while i<num:
+    if num%i==0:
+      p = 1
+      break
+    i = i+1
+if p==0:
+    print("Number is prime ")
+else:
+    print("Number is not prime")
+    
+-----------------------------------------------------------------------
+
+# Using Function
+
+def prime(x):
+    for i in range (2,x):
+        if n%i == 0:
+            return 1
+print("Enter a Number: ", end="")
+n = int(input())
+p = prime(n)
+if p == 1:
+    print("Not a prime number")
+else:
+    print("Prime number")
+    
+ -------------------------------------------------------------------------
+ 
+ # Using Class
+ 
+ class Prime:
+    def check(self,x):
+        for i in range (2,x):
+          if n%i == 0:
+            return 1
+print("Enter a Number: ", end="")
+n = int(input())
+obj = Prime()
+p = obj.check(n)
+if p == 1:
+    print("Not a prime number")
+else:
+    print("Prime number")
+ 
+ 
