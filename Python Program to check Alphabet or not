@@ -1,0 +1,62 @@
+# Normal Program
+
+print("Enter the string")
+c = input()
+if c>'a' and c<'z':
+    print("Alphabet is there")
+elif c>'A' and c<'Z':
+        print("Alphabet is there")
+else:
+    print("Alphabet is not there")
+    
+    -----------------------------------------------------
+    
+    # Using Function
+    
+    def checkAlphabet(x):
+    if len(x) > 1:
+        return 0
+    else:
+        if c >= 'a' and c <= 'z':
+            return 1
+        elif c >= 'A' and c <= 'z':
+            return 1
+        else:
+            return 2
+
+print("Enter a Character: ", end="")
+c = input()
+
+chk = checkAlphabet(c)
+if chk==1:
+    print("\n\"" +c+ "\" is an alphabet.")
+elif chk==2:
+    print("\n\"" +c+ "\" is not an alphabet!")
+else:
+    print("\nInvalid Input!")
+ 
+ -----------------------------------------------------------
+ 
+ # Using Class
+ 
+ class Codescracker:
+    def check(self,x):
+        if len(x)>1:
+            return 0
+        elif c >='a' and c <='z':
+            return 1
+        elif c >='A' and c <='Z':
+            return 1
+        else:
+            return 0
+print("Enter a Character: ", end="")
+c = input()
+
+obj = Codescracker()
+chk = obj.check(c)
+if chk==1:
+    print("\n\"" +c+ "\" is an alphabet.")
+elif chk==2:
+    print("\n\"" +c+ "\" is not an alphabet!")
+else:
+    print("\nInvalid Input!")
