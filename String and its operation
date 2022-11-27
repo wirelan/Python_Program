@@ -1,0 +1,77 @@
+str1 = "iNeuron"
+print(str1)
+print(len(str1))
+
+str2 = "Shashank's"
+print(str2)
+print(len(str2))
+
+# Print length of string
+str3 = 'He is a "good" boy'
+print(str3)
+print(len(str3))
+
+# How to use single quote double quote at a time
+str4 = 'ganesh "is a ggod boy" bsggs \'my camera \' hsdhg'
+print(str4)
+print(len(str4))
+
+# How to write multiple line string
+
+str5 = ''' SHashank is
+           not going to
+           attend the seminar '''
+print(str5)
+
+# String Concatenation
+str6 = "Shashank"
+str7 = "Mishra"
+print(str6+str7)
+
+# String Comparision
+str8 = "Shashank"
+str9 = "Shashank"
+print(str8 == str9)
+
+str10 = "Shashank"
+str11 = "ShashanK"
+print(str10 == str11)
+
+# How to print each character of string
+str12 = "Shashank"
+for char in str12:
+    print(char)
+    
+# Convert string into lower and upper case
+str13 = "Sourabh"
+print(str13.lower())
+print(str13.upper())
+
+------------------------------------------------------------------------------------
+
+Ouputs:
+
+iNeuron
+7
+Shashank's
+10
+He is a "good" boy
+18
+ganesh "is a ggod boy" bsggs 'my camera ' hsdhg
+47
+ SHashank is
+           not going to
+           attend the seminar 
+ShashankMishra
+True
+False
+S
+h
+a
+s
+h
+a
+n
+k
+sourabh
+SOURABH
