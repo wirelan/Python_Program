@@ -1,0 +1,7 @@
+# How to update value of list index item
+list7 = [1, "Shashank", 1000]
+print(list7)
+
+# Update Shashank to Rahul
+list7[1] = "Rahul"
+print(list7)
