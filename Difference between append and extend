@@ -1,0 +1,23 @@
+# How append function works
+list9 = [20,30,40]
+list10 = ["hi", "hello", "bye"]
+list9.append(list10)
+print("Output of append: ",list9)
+
+Output - Output of append:  [20, 30, 40, ['hi', 'hello', 'bye']]
+
+
+
+----------------------------------------------------------------------------------
+
+# How extend function works
+list11 = [20,30,40]
+list12 = ["hi", "hello", "bye"]
+list11.extend(list12)
+print("Output of extend: ",list11)
+
+Output - Output of extend:  [20, 30, 40, 'hi', 'hello', 'bye']
+
+
+
+----------------------------------------------------------------------------------
