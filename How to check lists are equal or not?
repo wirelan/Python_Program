@@ -1,0 +1,13 @@
+list1 = [1, "Shashank", 20, "Hi"]
+list2 = [1, "Shashank", 20, "Hi"]
+
+print("list are equal ??", list1 == list2)
+
+
+list3 = [1, "Shashank", 20, "Hi"]
+list4 = [1, "Shashank", "Hi", 20]
+
+print("list are equal ??", list3 == list4)
+
+
+Note - That's why list are called as sequential data type. Even if the elements are same but the sequence is different then it will return false.
