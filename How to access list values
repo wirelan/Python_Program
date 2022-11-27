@@ -1,0 +1,3 @@
+list6 = [10,15,20,25,30,35]
+for i in list6:
+    print(i)
