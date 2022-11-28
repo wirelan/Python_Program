@@ -44,3 +44,67 @@ Shashank
 ['Python', 'Java']
 Java
 Java
+
+
+# How to update value on particular key
+
+dict2['age'] = 30
+print(dict2)
+
+Output -
+
+{'name': 'Shashank', 'age': 30, 'skills': ['Python', 'Java'], 'states_visited': ['UP', 'Goa'], 45: 'Random Key', 'Other Details': {'color': 'Black', 'Nationality': 'Indian'}}
+
+# How to get the keys from a dictionary
+
+total_keys = dict2.keys()
+print(total_keys)
+
+Output - dict_keys(['name', 'age', 'skills', 'states_visited', 45, 'Other Details'])
+
+
+# How to iterate on dictionary
+for k,v in dict2.items():
+    print("keys is =",k, 'and value is =',v)
+    
+Output:
+keys is = name and value is = Shashank
+keys is = age and value is = 30
+keys is = skills and value is = ['Python', 'Java']
+keys is = states_visited and value is = ['UP', 'Goa']
+keys is = 45 and value is = Random Key
+keys is = Other Details and value is = {'color': 'Black', 'Nationality': 'Indian'}
+    
+# Compare Dictionary
+dict3 = {'a' : 1 , 'b' : 2 , 'c' : 3}
+dict4 = {'c' : 3 , 'b' : 2 , 'a' : 1}
+print(dict3 == dict4)
+
+dict3 = {'a' : 1 , 'b' : 2 , 'c' : 3}
+dict4 = {'c' : 3 , 'b' : 2 , 'a' : 5}
+print(dict3 == dict4)
+
+Output -
+True
+False
+
+# Note - Dictionary is not a squencial data type
+
+# Delete specific key value pair from dictionary
+
+del dict2['age']
+del dict2[45]
+print(dict2)
+
+Output -
+{'name': 'Shashank', 'skills': ['Python', 'Java'], 'states_visited': ['UP', 'Goa'], 'Other Details': {'color': 'Black', 'Nationality': 'Indian'}}
+
+# How to check if a key exist in dictionary or not
+keys_in_dict = list(dict2.keys())
+if 'skills' in keys_in_dict:
+    print(True)
+else:
+    print(False)
+
+Output - 
+True
