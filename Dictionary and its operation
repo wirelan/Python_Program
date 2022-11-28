@@ -1,0 +1,46 @@
+# Type of dictionary
+dict2 = {}
+print(type(dict2))
+
+Output - <class 'dict'>
+
+# How to insert value in dictionary
+
+dict2['name'] = 'Shashank'
+dict2['age'] = 22
+dict2['skills'] = ['Python', 'Java']
+dict2['states_visited'] = ['UP' , 'Goa']
+dict2[45] = 'Random Key'
+print(dict2)
+
+Output - {'name': 'Shashank', 'age': 22, 'skills': ['Python', 'Java'], 'states_visited': ['UP', 'Goa'], 45: 'Random Key'}
+
+# How to append or merge dictionary
+
+dict3 = {'color' : 'Black', 'Nationality' : 'Indian'}
+dict2['Other Details'] = dict3
+print(dict2)
+
+Output - {'name': 'Shashank', 'age': 22, 'skills': ['Python', 'Java'], 'states_visited': ['UP', 'Goa'], 45: 'Random Key', 'Other Details': {'color': 'Black', 'Nationality': 'Indian'}}
+
+
+# Length of the dictionary
+
+print(len(dict2))
+ 
+ Output - 6
+ 
+ 
+ # How to access value of a particular key
+print(dict2['name'])
+print(dict2['skills'])
+print(dict2['skills'][1])
+
+temp = dict2['skills']
+print(temp[1])
+
+Output - 
+Shashank
+['Python', 'Java']
+Java
+Java
