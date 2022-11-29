@@ -1,0 +1,49 @@
+# To check the type
+set1 = set()
+print(type(set1))   ---> <class 'set'>
+
+set4 = {}
+print(type(set4))   ---> <class 'dict'>
+
+# To check the output of set
+set3 = {1,2,3,4,5,2,1,4}
+print(set3) --------------------> {1, 2, 3, 4, 5}
+
+
+list1 = [1,2,3,4,1,2,3,4,5,6,7,8,1]
+set2 = set(list1)
+print(set2) ---------------------------> {1, 2, 3, 4, 5, 6, 7, 8}
+
+# How to insert value in set
+
+set6 = set()
+set6.add(1)
+set6.add(1)
+set6.add(2)
+set6.add(5)
+set6.add(2)
+set6.add(1)
+set6.add(2)
+print(set6)  ---------------------------> {1, 2, 5}
+
+# Use of update method
+
+tmp = [1,2,3,4,5,1,2,3,4,5,1,2,3]
+set6.update(tmp)
+print(set6)  --------------------------> {1, 2, 3, 4, 5}
+
+# Calculate the length of the set
+
+print(len(set6)) -----------------> 5
+
+# Union Operation on set
+set_a = {1,2,3,4,5,6}
+set_b = {3,6,8,9,10}
+print(set_a | set_b)  ---------------------------> {1, 2, 3, 4, 5, 6, 8, 9, 10}
+
+# Intersection Operation
+print(set_a & set_b)  --------------------------> {3, 6}
+
+# Difference in set
+print(set_a - set_b)  ---------------------------> {1, 2, 4, 5}
+
