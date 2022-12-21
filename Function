@@ -1,0 +1,30 @@
+Print Average of two number
+===========================
+
+def avg_of_two_num(a , b):
+    avg_result = (a+b)//2
+    return avg_result
+    
+num1 = 10
+num2 = 20
+
+output = avg_of_two_num(num1 , num2)
+print(output)
+
+------------------------------------------------------------------------
+
+Print factorial of a number using function
+===========================================
+
+def factorial(n):
+    if n < 0:
+        return 'Factorial does not exist'
+    elif n == 0:
+        return 1
+    else:
+        return  n * factorial(n-1)
+a = 5
+f = factorial(a)
+print(f)
+
+-----------------------------------------------------------------------------
